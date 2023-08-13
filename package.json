@@ -1,0 +1,25 @@
+{
+  "name": "jwt_console_project",
+  "version": "1.0.0",
+  "description": "JWT authentication with a single DocuSign code example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "relocate": "[ ! -d 'node_modules' ] || (rm -rf ../node_modules && mv -f node_modules ../)",
+    "relocate_windows": "(if exist node_modules/ (cd ../ && remove-node-modules && move jwt_console_project/node_modules ./))",
+    "start": "node index.js"
+  },
+  "author": "DocuSign, Inc",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "docusign-esign": "^6.3.0",
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.0",
+    "node_module": "^0.0.0",
+    "path": "^0.12.7",
+    "prompt-sync": "^4.2.0",
+    "remove-node-modules": "^1.7.6"
+  }
+}
